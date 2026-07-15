@@ -1,0 +1,124 @@
+:root {
+  --header-height: 7.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  color: white;
+}
+
+.inc-btn {
+  background-color: green;
+  margin-right: 12px;
+}
+.dec-btn {
+  background-color: red;
+}
+
+.light-primary-btn {
+  background-color: black;
+  color: white;
+}
+.dark-primary-btn {
+  background-color: white;
+  color: black;
+}
+.light-secondary-btn {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+.dark-secondary-btn {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+}
+
+/* Student Card */
+.card-cont {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card {
+  padding: 10px;
+  border: 0.5px solid #555;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+.card-subtitle {
+  font-size: 24px;
+  font-weight: medium;
+  color: #555;
+}
+
+.main-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: var(--header-height);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.btn-cont {
+  display: flex;
+  gap: 16px;
+}
+header nav ul {
+  display: flex;
+  gap: 16px;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.page {
+  height: calc(100% - var(--header-height));
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: 700;
+  background-color: beige;
+}
+
+.danger-page {
+  background-color: tomato;
+}
+
+.active-link,
+.active {
+  color: red;
+}
